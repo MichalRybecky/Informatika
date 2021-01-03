@@ -2,7 +2,7 @@ with open('hada.txt', 'r') as file:
     hry = [x.strip() for x in file.readlines()]
 
 print(f'Pocet zapisanych hier v subore: {len(hry)}')
-print(f'Najdlhsia hra mala {len(max(hry))} krokov.')
+print(f'Najdlhsia hra mala {len(max(hry, key=len))} krokov.')
 
 
 def skratit(hra):
