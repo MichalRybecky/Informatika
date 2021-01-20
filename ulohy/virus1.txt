@@ -1,0 +1,16 @@
+Počítačový vírus je jednou z mnohých hrozieb bezpečnosti a integrity počítačových systémov.
+Z programátorského hľadiska je počítačový vírus počítačový program,
+ktorý môže infikovať iný počítačový program takým spôsobom,
+že do neho skopíruje svoje telo, čím sa infikovaný program stáva prostriedkom pre ďalšiu aktiváciu vírusu.
+Pojem vírus definoval Fred B. Cohen na Pennsylvánskej univerzite, kde experimentoval so samoreplikujúcim sa kódom.
+Prvé publikácie v oblasti vírovej problematiky sa datujú do rokov 1984-85.
+V súčasnosti poznáme viac ako 30 000 rozličných, viac či menej nebezpečných, vírusov.
+Počítačový vírus je špeciálna programová aplikácia, ktorá je schopná vytvárať kópie.
+Tato aplikácia má vždy svojho autora. Aby zabezpečil svoje spúšťanie, pripája sa k súborom na disku
+alebo sa ukladá do systémových oblastí počítača. Vírusy potom môžu neočakávane meniť činnosť programu
+a môžu mať až charakter naprogramovaného sebazničenia súborov programových aplikácii
+s časovým oneskorením – tzv. časovaná bomba. Vírusy, ktoré prenikli do počítača za pomoci
+nevinných súborov – tzv. trójske kone, môžu napríklad zničiť ochranu heslom.
+Ak je počítač pripojený k sieti Internet môže byť ľahko napadnutý hackerom – človek,
+ktorý má veľké poznatky o sieti Internet a jeho snahou je deštrukcia súborov alebo
+vykonanie čo najväčších škôd v databázach počítačov.
