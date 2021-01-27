@@ -9,7 +9,18 @@ lava = len([znak for znak in text if znak == "("])
 
 farby = ("red", "blue", "green", "yellow", "orange", "brown", "purple", "pink")
 
-if prava == lava:
+
+for znak in text:
+    if znak == "(":
+        if znak == ")":
+            zle = True
+            break
+        elif znak == "(":
+            zle = False
+            break
+zle = True if prava != lava else False
+
+if not zle:
     x = 500 - len(text) * 20 / 2
     y, n = 100, 0
     for znak in text:
