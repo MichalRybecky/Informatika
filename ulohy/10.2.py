@@ -7,19 +7,23 @@ c.pack()
 switch = True
 
 
-def hod():
-    return [random.randint(1, 6) for _ in range(3)]
+def hod(kociek):
+    return [random.randint(1, 6) for _ in range(kociek)]
 
 
 def zapis_do_suboru(hody):
     with open("hody_kockou.txt", "w") as file:
         for hod in hody:
-            file.write(f"{hod[0]} {hod[1]} {hod[2]}\n")
+            for h in hod:
+                file.write(f"{h} ")
+            file.write("\n")
 
 
 def kresli(hody):
     global switch
-    x, y = 100, 700
+    y = 700
+    space = 1400 / len(hody)
+    x = space
     c.delete('all')
     for hodnota, spolu in hody.items():
         vyska = 600 // max(hody.values())
@@ -31,15 +35,16 @@ def kresli(hody):
         else:
             text = spolu
         c.create_text(x, y - (spolu * vyska) - 30, text=text, angle=90)
-        x += 85
+        x += space
 
 
 def main():
     hodov = int(entry1.get())
+    kociek = int(entry2.get())
     hody_file = []
-    hody = {x: 0 for x in range(3, 19)}
+    hody = {x: 0 for x in range(kociek, (kociek * 6) + 1)}
     for i in range(hodov):
-        current_hod = hod()
+        current_hod = hod(kociek)
         hody[sum(current_hod)] += 1
         hody_file.append(current_hod)
         kresli(hody)
@@ -53,9 +58,11 @@ def switch():
     switch = True if switch == False else False
 
 
-c.create_text(750, 980, text="Pocet hodov:")
+
 entry1 = tkinter.Entry()
 entry1.pack()
+entry2 = tkinter.Entry()
+entry2.pack()
 button_over = tkinter.Button(text="Start", command=main)
 button_over.pack()
 button_over = tkinter.Button(text="Switch", command=switch)
