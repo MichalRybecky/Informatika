@@ -72,6 +72,7 @@ def kresli(data, vysky):
 
 
 def main():
+    global data
     # Ma za ulohu spustat ine funkcie a posielat im udaje, potom handling mouse movementu
     data = read_file()
     vysky, dlzky, nast_v, nakl_v = info(data)
@@ -92,8 +93,13 @@ main()
 
 while True:
     c.delete('temp')
-    c.create_line(x_mouse, 0, x_mouse, 1000, tag='temp', fill='grey')
-    c.create_line(0, y_mouse, 2000, y_mouse, tag='temp', fill='grey')
+    if 200 < y_mouse < 600:
+        lenght = round((x_mouse - 30) / 23, 2)
+        hight = abs(y_mouse - 400 - data[0][1])
+        c.create_line(x_mouse, 0, x_mouse, 1000, tag='temp', fill='grey')
+        c.create_line(0, y_mouse, 2000, y_mouse, tag='temp', fill='grey')
+        c.create_text(x_mouse + 50, y_mouse - 50, text=f"{lenght} km", tag='temp')
+        c.create_text(x_mouse + 50, y_mouse - 35, text=f"{+hight} m", tag='temp')
 
     c.update()
     c.after(10)
