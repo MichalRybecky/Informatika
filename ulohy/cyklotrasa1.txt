@@ -1,0 +1,22 @@
+Hlohovec;156;0
+Koplotovce;9;2
+Sokolovce;-5;10
+Ratnovce;30;3
+Šírava;-32;2
+Pod červenou Vežou;4;0.5
+Piešťany - Kúpeľný most;0;0.6
+Moravany nad Váhom;3;2.2
+Zástavka pod Hubinou;20;2.5
+Ducové;-5;1
+Modrovka;-10;3.5
+Lúka;30;0.5
+Hrádok;0;6
+Hôrka nad Váhom;-7;3
+Nová Ves nad Váhom;-13;1.5
+Košovce;3;1.5
+Beckov;10;5
+Trenčianske Stankovce;37;11
+Trenčín;-19;10
+Kubrá;19;4
+Trenčianska Teplá;-10;8
+Dubnica nad Váhom;22;3.5

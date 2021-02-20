@@ -24,12 +24,12 @@ def kresli(hody):
     y = 700
     space = 1400 / len(hody)
     x = space
-    c.delete('all')
+    c.delete("all")
     for hodnota, spolu in hody.items():
         vyska = 600 // max(hody.values())
         c.create_text(x, y + 50, text=hodnota)
         c.create_rectangle(x - 10, y, x + 10, y - (spolu * vyska), fill="green")
-        percento = (spolu / sum(hody.values()) * 100)
+        percento = spolu / sum(hody.values()) * 100
         if switch:
             text = f"{round(percento, 2)}%"
         else:
@@ -56,7 +56,6 @@ def main():
 def switch():
     global switch
     switch = True if switch == False else False
-
 
 
 entry1 = tkinter.Entry()
